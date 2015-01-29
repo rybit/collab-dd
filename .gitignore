@@ -3,3 +3,7 @@
 *.pyc
 *.swp
 db/*
+
+node_modules/
+*.log
+
