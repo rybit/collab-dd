@@ -1,0 +1,23 @@
+the rendering of a template goes like so:
+
+GET '/' -->
+    app.js finds the route -->
+    call the fn in index.js (index) -->
+    render the 'index' page -->
+    handlebars loads up main.handlebars, and dumps index.handlebars into the {{BODY}}
+
+    return the HTML
+
+That means if you add a new route or page you'll
+    (1) add the route to the app.js
+    (2) add a handler in the routes/ area
+    (3) add in the templates to views/
+EXAMPLE: add /user
+    (1) add to app.js: app.get('/user', routes.user)
+    (2) create user.js in routes/
+        exports.user = function(req, res) { res.render('user'); }
+    (3) create user.handlebars template in views/
+        This is the users page
+
+
+
