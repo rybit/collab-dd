@@ -4,6 +4,7 @@
 *.swp
 db/*
 
+db/
 node_modules/
 *.log
 
