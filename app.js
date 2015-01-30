@@ -24,6 +24,8 @@ app.use(express.static(__dirname + '/public'));
 
 // establish some routes
 app.get('/', routes.index); // any GET request for '/'
+app.get('/users', routes.users);
+app.get('/users/:id', routes.users.one);
 
 // start the server and log a bit
 app.listen(app.get('port'), function() {
