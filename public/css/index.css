@@ -1,0 +1,33 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    /*position: relative;*/
+}
+#body-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#bottom-up-b {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    background-color: blue;
+}
+
+#left-frame{
+    float: left;
+    width: 80%;
+    height: 100%;
+    /*background-color: red;*/
+}
+
+#right-frame {
+    height: 100%;
+    overflow: hidden;
+    border-left: 1px solid black;
+    /*background-color: green;*/
+}
