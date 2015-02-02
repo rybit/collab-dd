@@ -11,7 +11,7 @@ exports.users = function(req, res) {
           return;
         }
 
-        res.json(users);
+        res.render('index', {'users': users});
     });
 };
 

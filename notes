@@ -20,4 +20,26 @@ EXAMPLE: add /user
         This is the users page
 
 
+----------------------------------------------------------------
+BACKBONE
+----------------------------------------------------------------
+Models populated from Mongo need a custom idAttribute
+var ... = Backbone.Model.extend({ idAttribute: '_id'});
 
+The collections expect to be populated by a return of an first level array
+of the inner models.
+example:
+    GET '/users' -->
+    [
+        { '_id': 'asdf', ...},
+        { '_id': 'xcvc', ...}
+    ]
+
+    NOT LIKE THIS:
+    {'users' : [ {...user...}, {...user...}]}
+
+Then in JS you can do:
+    var col = new UserCollection();
+    // now is a 0 length array
+    col.fetch();
+    // now makes the real request
