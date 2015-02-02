@@ -2,7 +2,7 @@
 // require statements do just that, and then the js
 // module is loaded into the var
 var express = require('express'),
-    routes = require('./routes'),
+    routes = require('./routes/handlers.js'),
     handlebars = require('express-handlebars');
 
 // create the actual engine
