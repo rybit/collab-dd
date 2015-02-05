@@ -1,20 +1,25 @@
 <link rel="stylesheet" type="text/css" href="/css/index.css">
 <div id='body-wrapper'>
-    <div id="left-frame">
-        <div id="chat">
+    <div id="content-wrapper">
+        <div id="left-frame">
+            <div id="chat">
+            </div>
+            <div id="user-input">
+                <div id="entry-buttons">
+                    <button id="send">Send</button>
+                    <button id="roll">Roll</button>
+                </div>
+                <div id="ta-wrapper">
+                    <textarea name="user-entry"></textarea>
+                </div>
+            </div>
         </div>
-        <div id="user-input">
-            <textarea name="user-entry">
-            </textarea>
-            <button id="roll">Roll</button>
-            <button id="send">Send</button>
-        </div>
-    </div>
-    <div id="right-frame" class="resizable">
-    <!-- todo make jquery accordian -->
-        <div id="char-summary">
-        </div>
-        <div id="inventory-summary">
+        <div id="right-frame" class="resizable">
+        <!-- todo make jquery accordian -->
+            <div id="char-summary">
+            </div>
+            <div id="inventory-summary">
+            </div>
         </div>
     </div>
     <div id="bottom-up-b">
